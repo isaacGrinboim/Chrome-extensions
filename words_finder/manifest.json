@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Word Highlighter",
+    "version": "1.0",
+    "description": "Highlight words starting with 'a'",
+    "permissions": ["activeTab"],
+    "browser_action": {
+      "default_icon": "hand.png",
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

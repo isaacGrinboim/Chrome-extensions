@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Hello, World! Extension",
+  "version": "1.0",
+  "description": "A simple Chrome extension that greets you with 'Hello, World!'",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://grades.cs.technion.ac.il/grades.cgi"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
